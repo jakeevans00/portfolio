@@ -5,5 +5,7 @@
 
 <div class="min-h-screen flex flex-col px-12 gap-4">
   <Header />
-  <slot />
+  <div class="flex flex-col items-center mt-4">
+    <slot />
+  </div>
 </div>

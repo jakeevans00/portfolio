@@ -1,1 +1,1 @@
-<h1 class="text-5xl">notes</h1>
+<h1 class="text-5xl font-bold">notes</h1>

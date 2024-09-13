@@ -46,12 +46,12 @@
   {#each themes as theme, index}
     <button
       on:click={() => setTheme(theme)}
-      class={`${activeTheme === theme ? "text-primary" : "hover:text-primary"}`}
+      class={`${activeTheme === theme ? "text-primary" : "hover:text-primary"} flex flex-col items-center gap-1`}
     >
       <span class="mx-1 hidden lg:block">
         {theme}
       </span>
-      <svelte:component this={icons[index]} class=" ml-2" />
+      <svelte:component this={icons[index]} class="" />
     </button>
   {/each}
 </div>
