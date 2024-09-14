@@ -2,7 +2,7 @@
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
 </script>
 
-<header class="sticky left-0 top-0 z-50">
+<header class=" px-12">
   <div class="flex justify-between items-center pt-8 pb-4 w-full">
     <div class="logo-text font-extrabold text-xl text-primary">
       <span class="underline">j</span>ake<span class="text-secondary">_</span
