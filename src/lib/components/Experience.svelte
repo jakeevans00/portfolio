@@ -9,8 +9,8 @@
         </div>
         <ul class="flex-grow">
           <li class="">
-            Built sick apps and did some crazy scripting stuff using netsuite,
-            etc, even more impressive things
+            Create software product as part of Sandbox Education program, a
+            startup incubator.
           </li>
         </ul>
       </li>

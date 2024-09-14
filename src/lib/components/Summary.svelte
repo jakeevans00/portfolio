@@ -1,11 +1,12 @@
 <script>
   import SkillsGrid from "$lib/components/SkillsGrid.svelte";
+  import image from "$lib/assets/bikejake.jpg";
 </script>
 
 <div class="flex flex-col items-center gap-8 w-2/3">
   <img
-    src="/src/assets/bikejake.JPG"
-    alt=""
+    src={image}
+    alt="Jake on his bike"
     class=" filter grayscale rounded-full hover:grayscale-0 max-h-[500px] transition-all duration-300"
   />
   <p class="text-3xl font-bold">hi, i'm jake! 👋</p>
