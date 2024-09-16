@@ -30,15 +30,13 @@
 
 <section>
   <div>
-    <p class="text-3xl font-bold mb-8 text-center">tools + skills</p>
+    <p class="text-3xl font-bold mb-8 text-center">tools</p>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
       {#each skills as skill, i}
-        <div
-          class="border border-neutral hover:border-accent rounded-lg shadow-md overflow-hidden"
-        >
+        <div class="border border-neutral rounded-lg shadow-md overflow-hidden">
           <div class="px-4 py-2 flex flex-col items-center">
-            <svelte:component this={skills[i].logo} class="h-12 w-12 mb-1" />
+            <svelte:component this={skills[i].logo} class="h-10 w-12 mb-1" />
             <h3 class="font-semibold text-center">
               {skill.name}
             </h3>

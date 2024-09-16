@@ -1,20 +1,19 @@
 <script>
   import Summary from "$lib/components/Summary.svelte";
-  import SkillsGrid from "$lib/components/SkillsGrid.svelte";
+  import Skills from "$lib/components/Skills.svelte";
   import Experience from "$lib/components/Experience.svelte";
   import Contact from "$lib/components/Contact.svelte";
+  import Projects from "$lib/components/Projects.svelte";
 
   import { themeChange } from "theme-change";
   import { onMount } from "svelte";
-  import Projects from "$lib/components/Projects.svelte";
 
   onMount(() => themeChange(false));
 </script>
 
 <div class="flex flex-col gap-16">
   <Summary />
-  <div class="h-1 bg-primary"></div>
-  <SkillsGrid />
+  <Skills />
   <Projects />
   <Experience />
   <Contact />

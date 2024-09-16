@@ -1,10 +1,11 @@
 <script>
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
+  import MingcuteMenuFill from "~icons/mingcute/menu-fill";
 </script>
 
 <div class="navbar px-0 py-2">
   <div class="flex-1">
-    <a href="#about">
+    <a href="/">
       <div class="font-extrabold text-xl text-primary">
         jake<span class="text-secondary">_</span><span class="text-accent"
           >evans</span
@@ -13,14 +14,16 @@
     </a>
   </div>
   <div class="flex-none">
-    <ThemeSwitcher />
+    <div class="hidden sm:block">
+      <ThemeSwitcher />
+    </div>
 
     <ul class="menu menu-horizontal px-1 ml-4">
       <li>
         <details>
-          <summary>view</summary>
+          <summary><MingcuteMenuFill class="text-2xl" /></summary>
           <ul class="bg-base-100 rounded-t-none p-2">
-            <li><a href="#projects">projects</a></li>
+            <li><a href="/#projects">projects</a></li>
             <li><a href="/#contact">contact</a></li>
             <li><a href="/notes">notes</a></li>
           </ul>
