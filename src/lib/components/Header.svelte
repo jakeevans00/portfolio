@@ -2,25 +2,30 @@
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
 </script>
 
-<header class=" px-12">
-  <div class="flex justify-between items-center pt-8 pb-4 w-full">
-    <div class="logo-text font-extrabold text-xl text-primary">
-      <span class="underline">j</span>ake<span class="text-secondary">_</span
-      ><span class="text-accent">evans</span>
-    </div>
-    <div class="hidden sm:block">
-      <ThemeSwitcher />
-    </div>
-    <nav class="text-lg">
-      <ul class="flex gap-6">
-        <nav>
-          <a class="hover:text-accent" href="/">projects</a>
-          <a class="hover:text-accent" href="/notes">notes</a>
-          <a class="hover:text-accent" href="/about">about</a>
-        </nav>
-      </ul>
-    </nav>
+<div class="navbar px-0 py-2">
+  <div class="flex-1">
+    <a href="#about">
+      <div class="font-extrabold text-xl text-primary">
+        jake<span class="text-secondary">_</span><span class="text-accent"
+          >evans</span
+        >
+      </div>
+    </a>
   </div>
+  <div class="flex-none">
+    <ThemeSwitcher />
 
-  <div class="h-1 bg-primary"></div>
-</header>
+    <ul class="menu menu-horizontal px-1 ml-4">
+      <li>
+        <details>
+          <summary>view</summary>
+          <ul class="bg-base-100 rounded-t-none p-2">
+            <li><a href="#projects">projects</a></li>
+            <li><a href="/#contact">contact</a></li>
+            <li><a href="/notes">notes</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>

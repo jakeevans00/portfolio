@@ -1,5 +1,5 @@
-<div class="flex flex-col items-center gap-8 my-8 w-5/6">
-  <p class="text-3xl font-bold">experience</p>
+<section class="flex flex-col gap-8 my-8">
+  <p class="text-3xl font-bold text-center">experience</p>
   <div class="border-2 rounded-lg p-8 border-neutral w-full">
     <ul class="flex flex-col gap-8">
       <li class="flex gap-8">
@@ -52,4 +52,4 @@
       </li>
     </ul>
   </div>
-</div>
+</section>
