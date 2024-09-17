@@ -22,7 +22,7 @@
       <li>
         <details>
           <summary><MingcuteMenuFill class="text-2xl" /></summary>
-          <ul class="bg-base-100 rounded-t-none p-2">
+          <ul class="bg-base-100 rounded-t-none p-2 z-10">
             <li><a href="/#projects">projects</a></li>
             <li><a href="/#contact">contact</a></li>
             <li><a href="/notes">notes</a></li>

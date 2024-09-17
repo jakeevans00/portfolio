@@ -9,7 +9,7 @@ export const funProjects = [
     iframe: true,
   },
   {
-    title: "Witness Fitness",
+    title: "Health App",
     badge: "LIVE",
     badgeColor: "badge-primary",
     url: "$lib/assets/fitness.jpg",
