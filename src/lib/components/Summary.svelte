@@ -5,13 +5,13 @@
   import canyon from "$lib/assets/canyon.jpg";
   import { goto } from "$app/navigation";
 
-  const images = [bikejake, dog, wedding, canyon];
+  const images = [bikejake, wedding, dog, canyon];
   const handleClick = () => {
     goto("/#contact");
   };
 </script>
 
-<div>
+<div class="mt-16">
   <div
     class="flex flex-col-reverse md:flex-row gap-8 md:gap-16 items-center justify-between"
   >
