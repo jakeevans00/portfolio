@@ -5,32 +5,34 @@
   export let data: PageData;
 </script>
 
-<div class="flex flex-col justify-center items-center mx-auto px-4">
-  <p class="text-4xl lg:text-5xl font-bold mb-8 text-center">Notes</p>
+<div class="flex flex-col justify-center items-start mx-auto px-16">
+  <p class="text-4xl lg:text-5xl font-bold mb-8">Notes</p>
   <nav>
-    <ul class="">
+    <ul class="w-full">
       {#each data.notes as note}
-        <li class="flex items-start gap-4 w-full items-">
-          <span class="mt-[2px] text-gray-500"
+        <li class="w-full grid grid-cols-4 gap-4 mb-4">
+          <span class="mt-[2px] col-span-1 text-gray-500"
             ><BiCalendar class="inline mr-2" />{new Date(
-              note.createdDate,
+              note.createdDate
             ).toLocaleDateString("en-US")}</span
           >
-          <div>
-            <div>
-              <a href="/notes/{note.urlPath}" class="text-xl hover:text-primary"
+          <div class="col-span-3">
+            <div class="flex items-center">
+              <a
+                href="/notes/{note.urlPath}"
+                class="text-xl hover:text-primary mr-2"
                 >{note.title}
               </a>
               {#each note.tags as tag}
                 <span
-                  class="text-xs bg-primary text-white rounded-full ml-2 -mt-2 px-2"
+                  class="text-xs bg-primary text-white rounded-full ml-2 px-2"
                   >{tag}</span
                 >
               {/each}
             </div>
 
             <p>
-              {note.blocks[0].text}
+              {note.description}
             </p>
           </div>
         </li>
