@@ -5,7 +5,11 @@
 
   export let data: PageData;
 
-  const renderBlock = (block: { component: string; text: string }) => {
+  const renderBlock = (block: {
+    component: string;
+    text: string;
+    code: string;
+  }) => {
     switch (block.component) {
       case "Paragraph":
         return `<p class="my-1">${block.text}</p>`;
@@ -13,6 +17,8 @@
         return `<h1 class="text-3xl my-4 font-bold">${block.text}</h1>`;
       case "BulletedListItem":
         return `<li class="list-disc pl-5">${block.text}</li>`;
+      case "CodeBlock":
+        return `${block.code}`;
       default:
         return "";
     }

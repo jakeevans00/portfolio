@@ -37,6 +37,11 @@ export const notes = [
         text: "Hooks",
       },
       {
+        component: "CodeBlock",
+        code: '<span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {\n\t<span class="hljs-title function_">loadMoreItems</span>();\n\t},[]);',
+        language: "javascript",
+      },
+      {
         component: "Paragraph",
         text: "useEffect ",
       },
@@ -71,6 +76,10 @@ export const notes = [
       {
         component: "BulletedListItem",
         text: "Use to keep track of application state across renders",
+      },
+      {
+        component: "Heading3",
+        text: "Custom Hooks",
       },
     ],
   },
