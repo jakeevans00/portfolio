@@ -16,7 +16,9 @@
     >
       {#each projects as project}
         <div class="carousel-item">
-          <div class="card card-custom w-[450px] border border-neutral">
+          <div
+            class="card card-custom w-[325px] sm:w-[450px] border border-neutral"
+          >
             <figure class="h-[400px]">
               {#if project.iframe === true}
                 <iframe
@@ -52,7 +54,9 @@
     >
       {#each work as project}
         <div class="carousel-item">
-          <div class="card card-custom w-[450px] border border-neutral">
+          <div
+            class="card card-custom w-[325px] sm:w-[450px] border border-neutral"
+          >
             <figure class="h-[400px]">
               <iframe
                 src={project.url}
@@ -64,7 +68,9 @@
             <div class="card-body">
               <h2 class="card-title">
                 {project.title}
-                <div class={`badge ${project.badgeColor}`}>{project.badge}</div>
+                <div class={`badge ${project.badgeColor} h-fit text-center`}>
+                  {project.badge}
+                </div>
               </h2>
               <p>
                 {project.desc}

@@ -11,7 +11,7 @@
   };
 </script>
 
-<div class="mt-16">
+<div class="sm:mt-16">
   <div
     class="flex flex-col-reverse md:flex-row gap-8 md:gap-16 items-center justify-between"
   >

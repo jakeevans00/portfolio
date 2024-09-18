@@ -5,15 +5,15 @@
   export let data: PageData;
 </script>
 
-<div class="flex flex-col justify-center items-start mx-auto px-16">
+<div class="flex flex-col justify-center items-start mx-auto sm:px-16 sm:mt-10">
   <p class="text-4xl lg:text-5xl font-bold mb-8">Notes</p>
   <nav>
     <ul class="w-full">
       {#each data.notes as note}
         <li class="w-full grid grid-cols-4 gap-4 mb-4">
-          <span class="mt-[2px] col-span-1 text-gray-500"
-            ><BiCalendar class="inline mr-2" />{new Date(
-              note.createdDate
+          <span class="text-xs md:text-sm mt-[2px] col-span-1 text-gray-500"
+            ><BiCalendar class="hidden sm:inline mr-2" />{new Date(
+              note.createdDate,
             ).toLocaleDateString("en-US")}</span
           >
           <div class="col-span-3">
