@@ -15,7 +15,7 @@
           </div>
           <ul class="col-span-2">
             {#each exp.bullets as bullet}
-              <li class="">
+              <li class="list-disc mb-1">
                 {bullet}
               </li>
             {/each}

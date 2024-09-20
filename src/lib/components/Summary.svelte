@@ -1,6 +1,6 @@
 <script>
   import bikejake from "$lib/assets/bikejake.jpg";
-  import wedding from "$lib/assets/lizzyjakebridals18_square.png";
+  import wedding from "$lib/assets/lizzyjake.png";
   import dog from "$lib/assets/dog.jpg";
   import canyon from "$lib/assets/canyon.jpg";
   import { goto } from "$app/navigation";
@@ -38,11 +38,5 @@
         {/each}
       </div>
     </div>
-
-    <!-- <img
-      src={image}
-      alt="Jake on his bike"
-      class="filter rounded-full hover:grayscale-0 h-[300px] md:h-[425px] transition-all duration-300"
-    /> -->
   </div>
 </div>
