@@ -1,7 +1,7 @@
 <script>
   import SkillsGrid from "$lib/components/Skills.svelte";
   import image from "$lib/assets/bikejake.jpg";
-  import fitness from "$lib/assets/fitness.jpg";
+  import fitness from "$lib/assets/lift4.png";
 
   import { funProjects as projects } from "$lib/data/projects";
   import { workProjects as work } from "$lib/data/projects";
@@ -30,8 +30,10 @@
               {/if}
             </figure>
             <div class="card-body">
-              <h2 class="card-title">
-                {project.title}
+              <h2 class="card-title hover:text-primary">
+                <a href={project.url}>
+                  {project.title}
+                </a>
                 <div class={`badge ${project.badgeColor}`}>{project.badge}</div>
               </h2>
               <p>
