@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
   import MingcuteMenuFill from "~icons/mingcute/menu-fill";
 
@@ -7,7 +7,7 @@
 
   onMount(() => {
     const handleClick = (event: MouseEvent) => {
-      if (detailsElement && !detailsElement.contains(event.target as Node)) {
+      if (detailsElement) {
         detailsElement.removeAttribute("open");
       }
     };
@@ -35,7 +35,7 @@
       <ThemeSwitcher />
     </div>
 
-    <ul class="menu menu-horizontal px-1 ml-4">
+    <ul class="menu menu-horizontal -mr-4 md:mr-0 md:ml-4">
       <li>
         <details bind:this={detailsElement}>
           <summary><MingcuteMenuFill class="text-2xl" /></summary>
