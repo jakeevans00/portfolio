@@ -13,7 +13,7 @@
   }) => {
     switch (block.component) {
       case "Paragraph":
-        return `<p class="my-1">${block.text}</p>`;
+        return `<p class="my-2 leading-relaxed">${block.text}</p>`;
       case "Heading1":
         return `<h1 class="text-3xl my-4 font-bold">${block.text}</h1>`;
       case "Heading2":
