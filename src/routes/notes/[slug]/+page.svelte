@@ -9,17 +9,25 @@
     component: string;
     text: string;
     code: string;
+    url: string;
   }) => {
     switch (block.component) {
       case "Paragraph":
         return `<p class="my-1">${block.text}</p>`;
       case "Heading1":
         return `<h1 class="text-3xl my-4 font-bold">${block.text}</h1>`;
+      case "Heading2":
+        return `<h2 class="text-2xl my-3 font-bold">${block.text}</h2>`;
+      case "Heading3":
+        return `<h3 class="text-xl my-2 font-bold">${block.text}</h3>`;
       case "BulletedListItem":
         return `<li class="list-disc pl-5">${block.text}</li>`;
+      case "NumberedListItem":
+        return `<li class="list-decimal pl-5 my-1">${block.text}</li>`;
       case "CodeBlock":
-        console.log(block.code);
-        return `<div class='bg-base-300 p-2 rounded-md whitespace-break-spaces font-mono'>${block.code}</div>`;
+        return `<div class='bg-base-300 py-4 px-6 rounded-md whitespace-break-spaces font-mono my-2'>${block.code}</div>`;
+      case "Image":
+        return `<img src=${block.url} class="px-10 py-4"/>`;
       default:
         return "";
     }
@@ -30,7 +38,7 @@
   <div class="mb-6">
     <a href="/notes" class="text-primary hover:text-accent">Go Back</a>
   </div>
-  <p class="text-4xl lg:text-5xl font-bold mb-8">
+  <p class="text-4xl lg:text-5xl font-bold mb-8 lg:leading-tight">
     {data.note.icon}
     {data.note.title}
   </p>
@@ -48,13 +56,13 @@
         {/each}
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4 mb-8">
       <div class="col-span-1 flex gap-2 items-center">
         <BiCalendar class="inline" />
         <span>Date Created</span>
       </div>
       <div class="col-span-2">
-        {new Date(data.note.createdDate).toLocaleDateString()}
+        {new Date(data.note.dateCreated).toLocaleDateString()}
       </div>
     </div>
   </div>
