@@ -6,6 +6,6 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "bumblebee", "retro", "pastel", "nord", "forest"],
+    themes: ["nord", "light", "dark", "bumblebee", "retro", "pastel", "forest"],
   },
 };

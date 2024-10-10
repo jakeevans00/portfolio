@@ -4,17 +4,8 @@ export const experiences = [
     company: "Sandbox",
     dates: "Aug 2024 - Present",
     bullets: [
-      "Conduct  market research through externships, interviews, and job-shadowing, establishing strategic customer relationships",
-      "Identify critical business pain points and iteratively develop software solutions, leading to the successful launch of a startup company",
-    ],
-  },
-  {
-    role: "Web Developer",
-    company: "BYU Department of Exercise Sciences",
-    dates: "Aug 2024 - Present",
-    bullets: [
-      "Manage and maintain web resources for the Department of Exercise Sciences, ensuring optimal functionality and user experience",
-      "Design and implement 5+ new web pages to support departmental initiatives and promote the newly established medical school",
+      "Conducted  market research through externships, interviews, and job-shadowing ",
+      "Built suite of tools to modernize privately-owned pharmacies leveraging custom hardware, using Tauri (Rust/TypeScript)",
     ],
   },
   {
@@ -22,8 +13,8 @@ export const experiences = [
     company: "Metasource",
     dates: "Apr 2024 - Aug 2024",
     bullets: [
-      "Develop TypeScript code to extend Oracle's NetSuite ERP system, protecting critical workflows and eliminating manual procedures",
-      "Lead a cross-functional team of 5 in developing a Machine Learning model to predict mortgage audit volumes and assist budget-makers within mortgage leadership",
+      "Engineered data pipeline using Python, Git, and MS SQL to deliver visibility into $30M of yearly revenue data",
+      "Led team of 5 in developing a ML model to assist mortgage leaders in resource allocation",
     ],
   },
   {
@@ -31,8 +22,16 @@ export const experiences = [
     company: "Rollins Center for Entrepreneurship",
     dates: "Mar 2023 - Apr 2024",
     bullets: [
-      "Engineered a custom attendance tracking tool, eliminating all inaccurate data entries and reducing manual input time by 90%",
-      "Spearheaded the development of a startup tracking application using Next.js, Nest, Prisma, and MySQL, facilitating efficient monitoring of past and present BYU startup companies",
+      "Developed attendance tracking app, using React/Next.js to boost response rates and eliminate data anomalies",
+      "Architected scalable web portal using React/Next.js, Prisma, Nest.js and Docker",
+    ],
+  },
+  {
+    role: "Web Developer",
+    company: "BYU Department of Exercise Sciences",
+    dates: "Aug 2024 - Present",
+    bullets: [
+      "Design and develop 8+ new web pages to boost awareness for departmental initiatives and newly established medical school",
     ],
   },
   {
@@ -40,8 +39,7 @@ export const experiences = [
     company: "Marriott School of Business",
     dates: "Jan 2021 - Apr 2022",
     bullets: [
-      "Provided guidance to graduate students in Python programming and Machine Learning concepts through office hours and targeted recitation sessions",
-      "Offered advanced debugging support for complex apps using industry-standard libraries including Beautiful Soup, pandas, and various Machine Learning frameworks",
+      "Taught Python programming for web scraping, predictive analytics, and machine learning",
     ],
   },
 ];

@@ -7,18 +7,18 @@
   import IconCloud from "~icons/bi/cloud";
   import HeroiconsPaintBrush from "~icons/heroicons/paint-brush";
 
-  const themes = ["light", "dark", "retro", "pastel", "nord", "forest"];
+  const themes = ["nord", "light", "dark", "retro", "pastel", "forest"];
 
   const icons = [
+    IconCloud,
     IconSun,
     IconMoon,
     IconCamera,
     HeroiconsPaintBrush,
-    IconCloud,
     IconTree,
   ];
 
-  let activeTheme: string = "light";
+  let activeTheme: string = "nord";
 
   const setTheme = (theme: string) => {
     activeTheme = theme;

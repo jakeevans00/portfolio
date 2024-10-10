@@ -1,5 +1,62 @@
 export const notes = [
   {
+    id: "113585bf-0976-80e8-a186-ff172554fab9",
+    dateCreated: "2024-10-02",
+    icon: "🦀",
+    title: "Learning Rust for Tauri, Ep. 1",
+    description: "A cheatsheet for remembering Rust fundamentals",
+    urlPath: "learn-rust-1",
+    tags: ["Rust", "Desktop Apps"],
+    blocks: [
+      {
+        component: "Heading1",
+        text: "Why Tauri",
+      },
+      {
+        component: "Paragraph",
+        text: "Little background here, I’m in business of building desktop apps right now. And since Tauri v2 was stable released today, I thought I’d give the “Electron-killer” framework a try. Dozens of articles, videos, and blog posts compare and contrast the two, each reaching more or less the same conclusion - Tauri is the better technology, though yet unproven. Sure, missing a few features (menu apps) and plagued by web-development headaches (browser incompatibility), but generally fast, lightweight, secure and robust.",
+      },
+      {
+        component: "Heading1",
+        text: "Getting Started",
+      },
+      {
+        component: "Paragraph",
+        text: "Start by installing all dependencies",
+      },
+      {
+        component: "CodeBlock",
+        code: '<span class="hljs-comment">// Rust</span>\ncurl --proto <span class="hljs-string">&#x27;=https&#x27;</span> --tlsv1<span class="hljs-number">.2</span> -sSf <span class="hljs-attr">https</span>:<span class="hljs-comment">//sh.rustup.rs | sh</span>\n\n<span class="hljs-comment">// Follow Rust instructions for your OS specific requirements</span>\n\n<span class="hljs-comment">// Create project (specify framework, langauage, flavor)</span>\nnpm create tauri-app@latest\ncd tauri-app\nnpm install\nnpm run tauri dev',
+        language: "javascript",
+      },
+      {
+        component: "Heading1",
+        text: "Development",
+      },
+      {
+        component: "Paragraph",
+        text: "Whatever framework you choose, development of the frontend is accomplished ",
+      },
+      {
+        component: "Heading3",
+        text: "Making it feel “native”",
+      },
+      {
+        component: "Paragraph",
+        text: "There are a few simple CSS changes you can make to improve the “native” feel of your app. ",
+      },
+      {
+        component: "CodeBlock",
+        code: 'body {\n\t<span class="hljs-attr">overflow</span>: hidden;\n\t<span class="hljs-attr">cursor</span>: <span class="hljs-keyword">default</span>;\n\ttext-<span class="hljs-attr">select</span>: none;\n}',
+        language: "javascript",
+      },
+      {
+        component: "Paragraph",
+        text: "Whoops, looks like this article isn’t done yet. Stay tuned for future update! 😁",
+      },
+    ],
+  },
+  {
     id: "107585bf-0976-80be-bd03-fc6fd27a95d2",
     dateCreated: "2024-09-19",
     icon: "📜",
@@ -238,15 +295,15 @@ export const notes = [
         text: "Some of my intuitive ideas were as follows:",
       },
       {
-        component: "BulletedListItem",
+        component: "NumberedListItem",
         text: "Leverage Notion’s built-in deployment capabilities and somehow embed the pages into my site",
       },
       {
-        component: "BulletedListItem",
+        component: "NumberedListItem",
         text: "Use Notion’s API to extract my blog data, and convert JSON to Svelte components",
       },
       {
-        component: "BulletedListItem",
+        component: "NumberedListItem",
         text: "Use a 3rd party library to npm install my way to victory. ",
       },
       {
@@ -268,7 +325,7 @@ export const notes = [
       {
         component: "Image",
         text: "",
-        url: "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/36faf469-4e4d-41fa-9f05-cbeb093da661/Screenshot_2024-09-20_at_5.08.01_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240921T091419Z&X-Amz-Expires=3600&X-Amz-Signature=97636cf9162f05ed7b3b9da3c711c75e1e5ab1c4573b1db93e66a2bbd7cfd246&X-Amz-SignedHeaders=host&x-id=GetObject",
+        url: "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/36faf469-4e4d-41fa-9f05-cbeb093da661/Screenshot_2024-09-20_at_5.08.01_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T065200Z&X-Amz-Expires=3600&X-Amz-Signature=e300a6d1dea0a4ce6723ee2e6da56735d26853dae9236f144621e95f1ac31a9e&X-Amz-SignedHeaders=host&x-id=GetObject",
       },
       {
         component: "NumberedListItem",
@@ -277,7 +334,7 @@ export const notes = [
       {
         component: "Image",
         text: "",
-        url: "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/d18ae39b-aa7e-4200-b1bc-4fe4706b25c9/Screenshot_2024-09-20_at_5.09.40_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240921T091419Z&X-Amz-Expires=3600&X-Amz-Signature=8fc2ccee86653ae2ccd9dd0f31bac20f5b7444dafe70ee54aab0684cd74739ed&X-Amz-SignedHeaders=host&x-id=GetObject",
+        url: "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/d18ae39b-aa7e-4200-b1bc-4fe4706b25c9/Screenshot_2024-09-20_at_5.09.40_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T065200Z&X-Amz-Expires=3600&X-Amz-Signature=2013a6e6d7bf35c3ac91b506205fe71f91d3c87b6fd3a66f347ea78b6b3f402a&X-Amz-SignedHeaders=host&x-id=GetObject",
       },
       {
         component: "NumberedListItem",
