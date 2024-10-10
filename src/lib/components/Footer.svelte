@@ -10,7 +10,7 @@
       <MdiGithub class="text-3xl hover:text-primary" />
     </a>
 
-    <a href="https://www.linkedin.com/in/jakeevans-byu/">
+    <a href="https://www.linkedin.com/in/jakevans/">
       <MdiLinkedin class="text-3xl hover:text-primary" />
     </a>
   </div>
